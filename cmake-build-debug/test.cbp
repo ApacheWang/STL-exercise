@@ -17,11 +17,101 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="function_call">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/function_call" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 function_call"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="function_call/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/function_call" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 function_call/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_LIMITED_DEFAULT_TEMPLATES">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_LIMITED_DEFAULT_TEMPLATES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_LIMITED_DEFAULT_TEMPLATES"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_LIMITED_DEFAULT_TEMPLATES/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_LIMITED_DEFAULT_TEMPLATES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_LIMITED_DEFAULT_TEMPLATES/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,8 +127,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test">
-				<Option output="/opt/git/STL-exercise/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+			<Target title="__STL_CLASS_PARTIAL_SPECIALIZATION">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_CLASS_PARTIAL_SPECIALIZATION" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -56,14 +146,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_CLASS_PARTIAL_SPECIALIZATION"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test/fast">
-				<Option output="/opt/git/STL-exercise/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+			<Target title="__STL_CLASS_PARTIAL_SPECIALIZATION/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_CLASS_PARTIAL_SPECIALIZATION" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -81,15 +171,511 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_CLASS_PARTIAL_SPECIALIZATION/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="config-inclass-init">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/config-inclass-init" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 config-inclass-init"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="config-inclass-init/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/config-inclass-init" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 config-inclass-init/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jjalloc">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/jjalloc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 jjalloc"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jjalloc/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/jjalloc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 jjalloc/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_TEMPLATE_NULL">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_TEMPLATE_NULL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_TEMPLATE_NULL"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_TEMPLATE_NULL/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_TEMPLATE_NULL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_TEMPLATE_NULL/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_FUNCTION_TMPL_PARTIAL_ORDER">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_FUNCTION_TMPL_PARTIAL_ORDER" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_FUNCTION_TMPL_PARTIAL_ORDER"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_FUNCTION_TMPL_PARTIAL_ORDER/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_FUNCTION_TMPL_PARTIAL_ORDER" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_FUNCTION_TMPL_PARTIAL_ORDER/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_NON_TYPE_TMPL_PARAM_BUG">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_NON_TYPE_TMPL_PARAM_BUG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_NON_TYPE_TMPL_PARAM_BUG"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_NON_TYPE_TMPL_PARAM_BUG/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_NON_TYPE_TMPL_PARAM_BUG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_NON_TYPE_TMPL_PARAM_BUG/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_NULL_TMPL_ARGS">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_NULL_TMPL_ARGS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_NULL_TMPL_ARGS"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_NULL_TMPL_ARGS/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_NULL_TMPL_ARGS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_NULL_TMPL_ARGS/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_MEMBER_TEMPLATES">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_MEMBER_TEMPLATES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_MEMBER_TEMPLATES"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="__STL_MEMBER_TEMPLATES/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/__STL_MEMBER_TEMPLATES" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 __STL_MEMBER_TEMPLATES/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Foreach">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/Foreach" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 Foreach"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Foreach/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/Foreach" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 Foreach/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="config-operator-overloading">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/config-operator-overloading" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 config-operator-overloading"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="config-operator-overloading/fast">
+				<Option output="/opt/git/STL-exercise/cmake-build-debug/config-operator-overloading" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/opt/git/STL-exercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="."/>
+					<Add directory="/usr/protobuf/include/"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 config-operator-overloading/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/opt/git/STL-exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/opt/git/STL-exercise/main.cpp">
-			<Option target="test"/>
+		<Unit filename="/opt/git/STL-exercise/allocator/jjalloc.cpp">
+			<Option target="jjalloc"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/allocator/jjalloc.h">
+			<Option target="jjalloc"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/Foreach.cpp">
+			<Option target="Foreach"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp">
+			<Option target="__STL_CLASS_PARTIAL_SPECIALIZATION"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp">
+			<Option target="__STL_FUNCTION_TMPL_PARTIAL_ORDER"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp">
+			<Option target="__STL_LIMITED_DEFAULT_TEMPLATES"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/__STL_MEMBER_TEMPLATES.cpp">
+			<Option target="__STL_MEMBER_TEMPLATES"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp">
+			<Option target="__STL_NON_TYPE_TMPL_PARAM_BUG"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/__STL_NULL_TMPL_ARGS.cpp">
+			<Option target="__STL_NULL_TMPL_ARGS"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/__STL_TEMPLATE_NULL.cpp">
+			<Option target="__STL_TEMPLATE_NULL"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/config-inclass-init.cpp">
+			<Option target="config-inclass-init"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/config-operator-overloading.cpp">
+			<Option target="config-operator-overloading"/>
+		</Unit>
+		<Unit filename="/opt/git/STL-exercise/configuration/function_call.cpp">
+			<Option target="function_call"/>
 		</Unit>
 		<Unit filename="/opt/git/STL-exercise/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -57,27 +57,27 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/main.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/main.cpp.o -c /opt/git/STL-exercise/main.cpp
+CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o: ../configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o -c /opt/git/STL-exercise/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp
 
-CMakeFiles/test.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/git/STL-exercise/main.cpp > CMakeFiles/test.dir/main.cpp.i
+CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /opt/git/STL-exercise/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp > CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.i
 
-CMakeFiles/test.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/git/STL-exercise/main.cpp -o CMakeFiles/test.dir/main.cpp.s
+CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /opt/git/STL-exercise/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp -o CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/main.cpp.o"
+"CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test: CMakeFiles/test.dir/main.cpp.o
+test: CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test"

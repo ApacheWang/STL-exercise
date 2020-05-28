@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/main.cpp.o"
+  "CMakeFiles/test.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o"
   "test"
   "test.pdb"
 )

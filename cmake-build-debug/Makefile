@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /opt/git/STL-exercise/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/112/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/112/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,44 +111,484 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named function_call
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+function_call: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 function_call
+.PHONY : function_call
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+function_call/fast:
+	$(MAKE) -f CMakeFiles/function_call.dir/build.make CMakeFiles/function_call.dir/build
+.PHONY : function_call/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named __STL_LIMITED_DEFAULT_TEMPLATES
 
-.PHONY : main.o
+# Build rule for target.
+__STL_LIMITED_DEFAULT_TEMPLATES: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __STL_LIMITED_DEFAULT_TEMPLATES
+.PHONY : __STL_LIMITED_DEFAULT_TEMPLATES
+
+# fast build rule for target.
+__STL_LIMITED_DEFAULT_TEMPLATES/fast:
+	$(MAKE) -f CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build.make CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build
+.PHONY : __STL_LIMITED_DEFAULT_TEMPLATES/fast
+
+#=============================================================================
+# Target rules for targets named __STL_CLASS_PARTIAL_SPECIALIZATION
+
+# Build rule for target.
+__STL_CLASS_PARTIAL_SPECIALIZATION: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __STL_CLASS_PARTIAL_SPECIALIZATION
+.PHONY : __STL_CLASS_PARTIAL_SPECIALIZATION
+
+# fast build rule for target.
+__STL_CLASS_PARTIAL_SPECIALIZATION/fast:
+	$(MAKE) -f CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build.make CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build
+.PHONY : __STL_CLASS_PARTIAL_SPECIALIZATION/fast
+
+#=============================================================================
+# Target rules for targets named config-inclass-init
+
+# Build rule for target.
+config-inclass-init: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 config-inclass-init
+.PHONY : config-inclass-init
+
+# fast build rule for target.
+config-inclass-init/fast:
+	$(MAKE) -f CMakeFiles/config-inclass-init.dir/build.make CMakeFiles/config-inclass-init.dir/build
+.PHONY : config-inclass-init/fast
+
+#=============================================================================
+# Target rules for targets named jjalloc
+
+# Build rule for target.
+jjalloc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jjalloc
+.PHONY : jjalloc
+
+# fast build rule for target.
+jjalloc/fast:
+	$(MAKE) -f CMakeFiles/jjalloc.dir/build.make CMakeFiles/jjalloc.dir/build
+.PHONY : jjalloc/fast
+
+#=============================================================================
+# Target rules for targets named __STL_TEMPLATE_NULL
+
+# Build rule for target.
+__STL_TEMPLATE_NULL: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __STL_TEMPLATE_NULL
+.PHONY : __STL_TEMPLATE_NULL
+
+# fast build rule for target.
+__STL_TEMPLATE_NULL/fast:
+	$(MAKE) -f CMakeFiles/__STL_TEMPLATE_NULL.dir/build.make CMakeFiles/__STL_TEMPLATE_NULL.dir/build
+.PHONY : __STL_TEMPLATE_NULL/fast
+
+#=============================================================================
+# Target rules for targets named __STL_FUNCTION_TMPL_PARTIAL_ORDER
+
+# Build rule for target.
+__STL_FUNCTION_TMPL_PARTIAL_ORDER: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __STL_FUNCTION_TMPL_PARTIAL_ORDER
+.PHONY : __STL_FUNCTION_TMPL_PARTIAL_ORDER
+
+# fast build rule for target.
+__STL_FUNCTION_TMPL_PARTIAL_ORDER/fast:
+	$(MAKE) -f CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build.make CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build
+.PHONY : __STL_FUNCTION_TMPL_PARTIAL_ORDER/fast
+
+#=============================================================================
+# Target rules for targets named __STL_NON_TYPE_TMPL_PARAM_BUG
+
+# Build rule for target.
+__STL_NON_TYPE_TMPL_PARAM_BUG: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __STL_NON_TYPE_TMPL_PARAM_BUG
+.PHONY : __STL_NON_TYPE_TMPL_PARAM_BUG
+
+# fast build rule for target.
+__STL_NON_TYPE_TMPL_PARAM_BUG/fast:
+	$(MAKE) -f CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build.make CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build
+.PHONY : __STL_NON_TYPE_TMPL_PARAM_BUG/fast
+
+#=============================================================================
+# Target rules for targets named __STL_NULL_TMPL_ARGS
+
+# Build rule for target.
+__STL_NULL_TMPL_ARGS: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __STL_NULL_TMPL_ARGS
+.PHONY : __STL_NULL_TMPL_ARGS
+
+# fast build rule for target.
+__STL_NULL_TMPL_ARGS/fast:
+	$(MAKE) -f CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build.make CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build
+.PHONY : __STL_NULL_TMPL_ARGS/fast
+
+#=============================================================================
+# Target rules for targets named __STL_MEMBER_TEMPLATES
+
+# Build rule for target.
+__STL_MEMBER_TEMPLATES: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 __STL_MEMBER_TEMPLATES
+.PHONY : __STL_MEMBER_TEMPLATES
+
+# fast build rule for target.
+__STL_MEMBER_TEMPLATES/fast:
+	$(MAKE) -f CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build.make CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build
+.PHONY : __STL_MEMBER_TEMPLATES/fast
+
+#=============================================================================
+# Target rules for targets named Foreach
+
+# Build rule for target.
+Foreach: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Foreach
+.PHONY : Foreach
+
+# fast build rule for target.
+Foreach/fast:
+	$(MAKE) -f CMakeFiles/Foreach.dir/build.make CMakeFiles/Foreach.dir/build
+.PHONY : Foreach/fast
+
+#=============================================================================
+# Target rules for targets named config-operator-overloading
+
+# Build rule for target.
+config-operator-overloading: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 config-operator-overloading
+.PHONY : config-operator-overloading
+
+# fast build rule for target.
+config-operator-overloading/fast:
+	$(MAKE) -f CMakeFiles/config-operator-overloading.dir/build.make CMakeFiles/config-operator-overloading.dir/build
+.PHONY : config-operator-overloading/fast
+
+allocator/jjalloc.o: allocator/jjalloc.cpp.o
+
+.PHONY : allocator/jjalloc.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.o
-.PHONY : main.cpp.o
+allocator/jjalloc.cpp.o:
+	$(MAKE) -f CMakeFiles/jjalloc.dir/build.make CMakeFiles/jjalloc.dir/allocator/jjalloc.cpp.o
+.PHONY : allocator/jjalloc.cpp.o
 
-main.i: main.cpp.i
+allocator/jjalloc.i: allocator/jjalloc.cpp.i
 
-.PHONY : main.i
+.PHONY : allocator/jjalloc.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.i
-.PHONY : main.cpp.i
+allocator/jjalloc.cpp.i:
+	$(MAKE) -f CMakeFiles/jjalloc.dir/build.make CMakeFiles/jjalloc.dir/allocator/jjalloc.cpp.i
+.PHONY : allocator/jjalloc.cpp.i
 
-main.s: main.cpp.s
+allocator/jjalloc.s: allocator/jjalloc.cpp.s
 
-.PHONY : main.s
+.PHONY : allocator/jjalloc.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.s
-.PHONY : main.cpp.s
+allocator/jjalloc.cpp.s:
+	$(MAKE) -f CMakeFiles/jjalloc.dir/build.make CMakeFiles/jjalloc.dir/allocator/jjalloc.cpp.s
+.PHONY : allocator/jjalloc.cpp.s
+
+configuration/Foreach.o: configuration/Foreach.cpp.o
+
+.PHONY : configuration/Foreach.o
+
+# target to build an object file
+configuration/Foreach.cpp.o:
+	$(MAKE) -f CMakeFiles/Foreach.dir/build.make CMakeFiles/Foreach.dir/configuration/Foreach.cpp.o
+.PHONY : configuration/Foreach.cpp.o
+
+configuration/Foreach.i: configuration/Foreach.cpp.i
+
+.PHONY : configuration/Foreach.i
+
+# target to preprocess a source file
+configuration/Foreach.cpp.i:
+	$(MAKE) -f CMakeFiles/Foreach.dir/build.make CMakeFiles/Foreach.dir/configuration/Foreach.cpp.i
+.PHONY : configuration/Foreach.cpp.i
+
+configuration/Foreach.s: configuration/Foreach.cpp.s
+
+.PHONY : configuration/Foreach.s
+
+# target to generate assembly for a file
+configuration/Foreach.cpp.s:
+	$(MAKE) -f CMakeFiles/Foreach.dir/build.make CMakeFiles/Foreach.dir/configuration/Foreach.cpp.s
+.PHONY : configuration/Foreach.cpp.s
+
+configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.o: configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o
+
+.PHONY : configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.o
+
+# target to build an object file
+configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o:
+	$(MAKE) -f CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build.make CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o
+.PHONY : configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.o
+
+configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.i: configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.i
+
+.PHONY : configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.i
+
+# target to preprocess a source file
+configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.i:
+	$(MAKE) -f CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build.make CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.i
+.PHONY : configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.i
+
+configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.s: configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.s
+
+.PHONY : configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.s
+
+# target to generate assembly for a file
+configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.s:
+	$(MAKE) -f CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build.make CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.s
+.PHONY : configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp.s
+
+configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.o: configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.o
+
+.PHONY : configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.o
+
+# target to build an object file
+configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.o:
+	$(MAKE) -f CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build.make CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.o
+.PHONY : configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.o
+
+configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.i: configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.i
+
+.PHONY : configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.i
+
+# target to preprocess a source file
+configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.i:
+	$(MAKE) -f CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build.make CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.i
+.PHONY : configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.i
+
+configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.s: configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.s
+
+.PHONY : configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.s
+
+# target to generate assembly for a file
+configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.s:
+	$(MAKE) -f CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build.make CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.s
+.PHONY : configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.cpp.s
+
+configuration/__STL_LIMITED_DEFAULT_TEMPLATES.o: configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.o
+
+.PHONY : configuration/__STL_LIMITED_DEFAULT_TEMPLATES.o
+
+# target to build an object file
+configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.o:
+	$(MAKE) -f CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build.make CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.o
+.PHONY : configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.o
+
+configuration/__STL_LIMITED_DEFAULT_TEMPLATES.i: configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.i
+
+.PHONY : configuration/__STL_LIMITED_DEFAULT_TEMPLATES.i
+
+# target to preprocess a source file
+configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.i:
+	$(MAKE) -f CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build.make CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.i
+.PHONY : configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.i
+
+configuration/__STL_LIMITED_DEFAULT_TEMPLATES.s: configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.s
+
+.PHONY : configuration/__STL_LIMITED_DEFAULT_TEMPLATES.s
+
+# target to generate assembly for a file
+configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.s:
+	$(MAKE) -f CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build.make CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.s
+.PHONY : configuration/__STL_LIMITED_DEFAULT_TEMPLATES.cpp.s
+
+configuration/__STL_MEMBER_TEMPLATES.o: configuration/__STL_MEMBER_TEMPLATES.cpp.o
+
+.PHONY : configuration/__STL_MEMBER_TEMPLATES.o
+
+# target to build an object file
+configuration/__STL_MEMBER_TEMPLATES.cpp.o:
+	$(MAKE) -f CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build.make CMakeFiles/__STL_MEMBER_TEMPLATES.dir/configuration/__STL_MEMBER_TEMPLATES.cpp.o
+.PHONY : configuration/__STL_MEMBER_TEMPLATES.cpp.o
+
+configuration/__STL_MEMBER_TEMPLATES.i: configuration/__STL_MEMBER_TEMPLATES.cpp.i
+
+.PHONY : configuration/__STL_MEMBER_TEMPLATES.i
+
+# target to preprocess a source file
+configuration/__STL_MEMBER_TEMPLATES.cpp.i:
+	$(MAKE) -f CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build.make CMakeFiles/__STL_MEMBER_TEMPLATES.dir/configuration/__STL_MEMBER_TEMPLATES.cpp.i
+.PHONY : configuration/__STL_MEMBER_TEMPLATES.cpp.i
+
+configuration/__STL_MEMBER_TEMPLATES.s: configuration/__STL_MEMBER_TEMPLATES.cpp.s
+
+.PHONY : configuration/__STL_MEMBER_TEMPLATES.s
+
+# target to generate assembly for a file
+configuration/__STL_MEMBER_TEMPLATES.cpp.s:
+	$(MAKE) -f CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build.make CMakeFiles/__STL_MEMBER_TEMPLATES.dir/configuration/__STL_MEMBER_TEMPLATES.cpp.s
+.PHONY : configuration/__STL_MEMBER_TEMPLATES.cpp.s
+
+configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.o: configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.o
+
+.PHONY : configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.o
+
+# target to build an object file
+configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.o:
+	$(MAKE) -f CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build.make CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.o
+.PHONY : configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.o
+
+configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.i: configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.i
+
+.PHONY : configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.i
+
+# target to preprocess a source file
+configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.i:
+	$(MAKE) -f CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build.make CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.i
+.PHONY : configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.i
+
+configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.s: configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.s
+
+.PHONY : configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.s
+
+# target to generate assembly for a file
+configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.s:
+	$(MAKE) -f CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build.make CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.s
+.PHONY : configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.cpp.s
+
+configuration/__STL_NULL_TMPL_ARGS.o: configuration/__STL_NULL_TMPL_ARGS.cpp.o
+
+.PHONY : configuration/__STL_NULL_TMPL_ARGS.o
+
+# target to build an object file
+configuration/__STL_NULL_TMPL_ARGS.cpp.o:
+	$(MAKE) -f CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build.make CMakeFiles/__STL_NULL_TMPL_ARGS.dir/configuration/__STL_NULL_TMPL_ARGS.cpp.o
+.PHONY : configuration/__STL_NULL_TMPL_ARGS.cpp.o
+
+configuration/__STL_NULL_TMPL_ARGS.i: configuration/__STL_NULL_TMPL_ARGS.cpp.i
+
+.PHONY : configuration/__STL_NULL_TMPL_ARGS.i
+
+# target to preprocess a source file
+configuration/__STL_NULL_TMPL_ARGS.cpp.i:
+	$(MAKE) -f CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build.make CMakeFiles/__STL_NULL_TMPL_ARGS.dir/configuration/__STL_NULL_TMPL_ARGS.cpp.i
+.PHONY : configuration/__STL_NULL_TMPL_ARGS.cpp.i
+
+configuration/__STL_NULL_TMPL_ARGS.s: configuration/__STL_NULL_TMPL_ARGS.cpp.s
+
+.PHONY : configuration/__STL_NULL_TMPL_ARGS.s
+
+# target to generate assembly for a file
+configuration/__STL_NULL_TMPL_ARGS.cpp.s:
+	$(MAKE) -f CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build.make CMakeFiles/__STL_NULL_TMPL_ARGS.dir/configuration/__STL_NULL_TMPL_ARGS.cpp.s
+.PHONY : configuration/__STL_NULL_TMPL_ARGS.cpp.s
+
+configuration/__STL_TEMPLATE_NULL.o: configuration/__STL_TEMPLATE_NULL.cpp.o
+
+.PHONY : configuration/__STL_TEMPLATE_NULL.o
+
+# target to build an object file
+configuration/__STL_TEMPLATE_NULL.cpp.o:
+	$(MAKE) -f CMakeFiles/__STL_TEMPLATE_NULL.dir/build.make CMakeFiles/__STL_TEMPLATE_NULL.dir/configuration/__STL_TEMPLATE_NULL.cpp.o
+.PHONY : configuration/__STL_TEMPLATE_NULL.cpp.o
+
+configuration/__STL_TEMPLATE_NULL.i: configuration/__STL_TEMPLATE_NULL.cpp.i
+
+.PHONY : configuration/__STL_TEMPLATE_NULL.i
+
+# target to preprocess a source file
+configuration/__STL_TEMPLATE_NULL.cpp.i:
+	$(MAKE) -f CMakeFiles/__STL_TEMPLATE_NULL.dir/build.make CMakeFiles/__STL_TEMPLATE_NULL.dir/configuration/__STL_TEMPLATE_NULL.cpp.i
+.PHONY : configuration/__STL_TEMPLATE_NULL.cpp.i
+
+configuration/__STL_TEMPLATE_NULL.s: configuration/__STL_TEMPLATE_NULL.cpp.s
+
+.PHONY : configuration/__STL_TEMPLATE_NULL.s
+
+# target to generate assembly for a file
+configuration/__STL_TEMPLATE_NULL.cpp.s:
+	$(MAKE) -f CMakeFiles/__STL_TEMPLATE_NULL.dir/build.make CMakeFiles/__STL_TEMPLATE_NULL.dir/configuration/__STL_TEMPLATE_NULL.cpp.s
+.PHONY : configuration/__STL_TEMPLATE_NULL.cpp.s
+
+configuration/config-inclass-init.o: configuration/config-inclass-init.cpp.o
+
+.PHONY : configuration/config-inclass-init.o
+
+# target to build an object file
+configuration/config-inclass-init.cpp.o:
+	$(MAKE) -f CMakeFiles/config-inclass-init.dir/build.make CMakeFiles/config-inclass-init.dir/configuration/config-inclass-init.cpp.o
+.PHONY : configuration/config-inclass-init.cpp.o
+
+configuration/config-inclass-init.i: configuration/config-inclass-init.cpp.i
+
+.PHONY : configuration/config-inclass-init.i
+
+# target to preprocess a source file
+configuration/config-inclass-init.cpp.i:
+	$(MAKE) -f CMakeFiles/config-inclass-init.dir/build.make CMakeFiles/config-inclass-init.dir/configuration/config-inclass-init.cpp.i
+.PHONY : configuration/config-inclass-init.cpp.i
+
+configuration/config-inclass-init.s: configuration/config-inclass-init.cpp.s
+
+.PHONY : configuration/config-inclass-init.s
+
+# target to generate assembly for a file
+configuration/config-inclass-init.cpp.s:
+	$(MAKE) -f CMakeFiles/config-inclass-init.dir/build.make CMakeFiles/config-inclass-init.dir/configuration/config-inclass-init.cpp.s
+.PHONY : configuration/config-inclass-init.cpp.s
+
+configuration/config-operator-overloading.o: configuration/config-operator-overloading.cpp.o
+
+.PHONY : configuration/config-operator-overloading.o
+
+# target to build an object file
+configuration/config-operator-overloading.cpp.o:
+	$(MAKE) -f CMakeFiles/config-operator-overloading.dir/build.make CMakeFiles/config-operator-overloading.dir/configuration/config-operator-overloading.cpp.o
+.PHONY : configuration/config-operator-overloading.cpp.o
+
+configuration/config-operator-overloading.i: configuration/config-operator-overloading.cpp.i
+
+.PHONY : configuration/config-operator-overloading.i
+
+# target to preprocess a source file
+configuration/config-operator-overloading.cpp.i:
+	$(MAKE) -f CMakeFiles/config-operator-overloading.dir/build.make CMakeFiles/config-operator-overloading.dir/configuration/config-operator-overloading.cpp.i
+.PHONY : configuration/config-operator-overloading.cpp.i
+
+configuration/config-operator-overloading.s: configuration/config-operator-overloading.cpp.s
+
+.PHONY : configuration/config-operator-overloading.s
+
+# target to generate assembly for a file
+configuration/config-operator-overloading.cpp.s:
+	$(MAKE) -f CMakeFiles/config-operator-overloading.dir/build.make CMakeFiles/config-operator-overloading.dir/configuration/config-operator-overloading.cpp.s
+.PHONY : configuration/config-operator-overloading.cpp.s
+
+configuration/function_call.o: configuration/function_call.cpp.o
+
+.PHONY : configuration/function_call.o
+
+# target to build an object file
+configuration/function_call.cpp.o:
+	$(MAKE) -f CMakeFiles/function_call.dir/build.make CMakeFiles/function_call.dir/configuration/function_call.cpp.o
+.PHONY : configuration/function_call.cpp.o
+
+configuration/function_call.i: configuration/function_call.cpp.i
+
+.PHONY : configuration/function_call.i
+
+# target to preprocess a source file
+configuration/function_call.cpp.i:
+	$(MAKE) -f CMakeFiles/function_call.dir/build.make CMakeFiles/function_call.dir/configuration/function_call.cpp.i
+.PHONY : configuration/function_call.cpp.i
+
+configuration/function_call.s: configuration/function_call.cpp.s
+
+.PHONY : configuration/function_call.s
+
+# target to generate assembly for a file
+configuration/function_call.cpp.s:
+	$(MAKE) -f CMakeFiles/function_call.dir/build.make CMakeFiles/function_call.dir/configuration/function_call.cpp.s
+.PHONY : configuration/function_call.cpp.s
 
 # Help Target
 help:
@@ -156,12 +596,56 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... function_call"
+	@echo "... __STL_LIMITED_DEFAULT_TEMPLATES"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... __STL_CLASS_PARTIAL_SPECIALIZATION"
+	@echo "... config-inclass-init"
+	@echo "... jjalloc"
+	@echo "... __STL_TEMPLATE_NULL"
+	@echo "... rebuild_cache"
+	@echo "... __STL_FUNCTION_TMPL_PARTIAL_ORDER"
+	@echo "... __STL_NON_TYPE_TMPL_PARAM_BUG"
+	@echo "... __STL_NULL_TMPL_ARGS"
+	@echo "... __STL_MEMBER_TEMPLATES"
+	@echo "... Foreach"
+	@echo "... config-operator-overloading"
+	@echo "... allocator/jjalloc.o"
+	@echo "... allocator/jjalloc.i"
+	@echo "... allocator/jjalloc.s"
+	@echo "... configuration/Foreach.o"
+	@echo "... configuration/Foreach.i"
+	@echo "... configuration/Foreach.s"
+	@echo "... configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.o"
+	@echo "... configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.i"
+	@echo "... configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.s"
+	@echo "... configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.o"
+	@echo "... configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.i"
+	@echo "... configuration/__STL_FUNCTION_TMPL_PARTIAL_ORDER.s"
+	@echo "... configuration/__STL_LIMITED_DEFAULT_TEMPLATES.o"
+	@echo "... configuration/__STL_LIMITED_DEFAULT_TEMPLATES.i"
+	@echo "... configuration/__STL_LIMITED_DEFAULT_TEMPLATES.s"
+	@echo "... configuration/__STL_MEMBER_TEMPLATES.o"
+	@echo "... configuration/__STL_MEMBER_TEMPLATES.i"
+	@echo "... configuration/__STL_MEMBER_TEMPLATES.s"
+	@echo "... configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.o"
+	@echo "... configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.i"
+	@echo "... configuration/__STL_NON_TYPE_TMPL_PARAM_BUG.s"
+	@echo "... configuration/__STL_NULL_TMPL_ARGS.o"
+	@echo "... configuration/__STL_NULL_TMPL_ARGS.i"
+	@echo "... configuration/__STL_NULL_TMPL_ARGS.s"
+	@echo "... configuration/__STL_TEMPLATE_NULL.o"
+	@echo "... configuration/__STL_TEMPLATE_NULL.i"
+	@echo "... configuration/__STL_TEMPLATE_NULL.s"
+	@echo "... configuration/config-inclass-init.o"
+	@echo "... configuration/config-inclass-init.i"
+	@echo "... configuration/config-inclass-init.s"
+	@echo "... configuration/config-operator-overloading.o"
+	@echo "... configuration/config-operator-overloading.i"
+	@echo "... configuration/config-operator-overloading.s"
+	@echo "... configuration/function_call.o"
+	@echo "... configuration/function_call.i"
+	@echo "... configuration/function_call.s"
 .PHONY : help
 
 

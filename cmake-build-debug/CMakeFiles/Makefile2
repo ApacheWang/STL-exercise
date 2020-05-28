@@ -53,7 +53,18 @@ CMAKE_BINARY_DIR = /opt/git/STL-exercise/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/test.dir/all
+all: CMakeFiles/function_call.dir/all
+all: CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/all
+all: CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/all
+all: CMakeFiles/config-inclass-init.dir/all
+all: CMakeFiles/jjalloc.dir/all
+all: CMakeFiles/__STL_TEMPLATE_NULL.dir/all
+all: CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/all
+all: CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/all
+all: CMakeFiles/__STL_NULL_TMPL_ARGS.dir/all
+all: CMakeFiles/__STL_MEMBER_TEMPLATES.dir/all
+all: CMakeFiles/Foreach.dir/all
+all: CMakeFiles/config-operator-overloading.dir/all
 
 .PHONY : all
 
@@ -63,36 +74,344 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/function_call.dir/clean
+clean: CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/clean
+clean: CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/clean
+clean: CMakeFiles/config-inclass-init.dir/clean
+clean: CMakeFiles/jjalloc.dir/clean
+clean: CMakeFiles/__STL_TEMPLATE_NULL.dir/clean
+clean: CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/clean
+clean: CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/clean
+clean: CMakeFiles/__STL_NULL_TMPL_ARGS.dir/clean
+clean: CMakeFiles/__STL_MEMBER_TEMPLATES.dir/clean
+clean: CMakeFiles/Foreach.dir/clean
+clean: CMakeFiles/config-operator-overloading.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/function_call.dir
 
 # All Build rule for target.
-CMakeFiles/test.dir/all:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target test"
-.PHONY : CMakeFiles/test.dir/all
+CMakeFiles/function_call.dir/all:
+	$(MAKE) -f CMakeFiles/function_call.dir/build.make CMakeFiles/function_call.dir/depend
+	$(MAKE) -f CMakeFiles/function_call.dir/build.make CMakeFiles/function_call.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target function_call"
+.PHONY : CMakeFiles/function_call.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.dir/rule: cmake_check_build_system
+CMakeFiles/function_call.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/function_call.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/test.dir/rule
+.PHONY : CMakeFiles/function_call.dir/rule
 
 # Convenience name for target.
-test: CMakeFiles/test.dir/rule
+function_call: CMakeFiles/function_call.dir/rule
 
-.PHONY : test
+.PHONY : function_call
 
 # clean rule for target.
-CMakeFiles/test.dir/clean:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
-.PHONY : CMakeFiles/test.dir/clean
+CMakeFiles/function_call.dir/clean:
+	$(MAKE) -f CMakeFiles/function_call.dir/build.make CMakeFiles/function_call.dir/clean
+.PHONY : CMakeFiles/function_call.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir
+
+# All Build rule for target.
+CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/all:
+	$(MAKE) -f CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build.make CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/depend
+	$(MAKE) -f CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build.make CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target __STL_LIMITED_DEFAULT_TEMPLATES"
+.PHONY : CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/rule
+
+# Convenience name for target.
+__STL_LIMITED_DEFAULT_TEMPLATES: CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/rule
+
+.PHONY : __STL_LIMITED_DEFAULT_TEMPLATES
+
+# clean rule for target.
+CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/clean:
+	$(MAKE) -f CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/build.make CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/clean
+.PHONY : CMakeFiles/__STL_LIMITED_DEFAULT_TEMPLATES.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir
+
+# All Build rule for target.
+CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/all:
+	$(MAKE) -f CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build.make CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/depend
+	$(MAKE) -f CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build.make CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target __STL_CLASS_PARTIAL_SPECIALIZATION"
+.PHONY : CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/rule
+
+# Convenience name for target.
+__STL_CLASS_PARTIAL_SPECIALIZATION: CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/rule
+
+.PHONY : __STL_CLASS_PARTIAL_SPECIALIZATION
+
+# clean rule for target.
+CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/clean:
+	$(MAKE) -f CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/build.make CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/clean
+.PHONY : CMakeFiles/__STL_CLASS_PARTIAL_SPECIALIZATION.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/config-inclass-init.dir
+
+# All Build rule for target.
+CMakeFiles/config-inclass-init.dir/all:
+	$(MAKE) -f CMakeFiles/config-inclass-init.dir/build.make CMakeFiles/config-inclass-init.dir/depend
+	$(MAKE) -f CMakeFiles/config-inclass-init.dir/build.make CMakeFiles/config-inclass-init.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target config-inclass-init"
+.PHONY : CMakeFiles/config-inclass-init.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/config-inclass-init.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/config-inclass-init.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/config-inclass-init.dir/rule
+
+# Convenience name for target.
+config-inclass-init: CMakeFiles/config-inclass-init.dir/rule
+
+.PHONY : config-inclass-init
+
+# clean rule for target.
+CMakeFiles/config-inclass-init.dir/clean:
+	$(MAKE) -f CMakeFiles/config-inclass-init.dir/build.make CMakeFiles/config-inclass-init.dir/clean
+.PHONY : CMakeFiles/config-inclass-init.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/jjalloc.dir
+
+# All Build rule for target.
+CMakeFiles/jjalloc.dir/all:
+	$(MAKE) -f CMakeFiles/jjalloc.dir/build.make CMakeFiles/jjalloc.dir/depend
+	$(MAKE) -f CMakeFiles/jjalloc.dir/build.make CMakeFiles/jjalloc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target jjalloc"
+.PHONY : CMakeFiles/jjalloc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/jjalloc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/jjalloc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/jjalloc.dir/rule
+
+# Convenience name for target.
+jjalloc: CMakeFiles/jjalloc.dir/rule
+
+.PHONY : jjalloc
+
+# clean rule for target.
+CMakeFiles/jjalloc.dir/clean:
+	$(MAKE) -f CMakeFiles/jjalloc.dir/build.make CMakeFiles/jjalloc.dir/clean
+.PHONY : CMakeFiles/jjalloc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/__STL_TEMPLATE_NULL.dir
+
+# All Build rule for target.
+CMakeFiles/__STL_TEMPLATE_NULL.dir/all:
+	$(MAKE) -f CMakeFiles/__STL_TEMPLATE_NULL.dir/build.make CMakeFiles/__STL_TEMPLATE_NULL.dir/depend
+	$(MAKE) -f CMakeFiles/__STL_TEMPLATE_NULL.dir/build.make CMakeFiles/__STL_TEMPLATE_NULL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target __STL_TEMPLATE_NULL"
+.PHONY : CMakeFiles/__STL_TEMPLATE_NULL.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/__STL_TEMPLATE_NULL.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__STL_TEMPLATE_NULL.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/__STL_TEMPLATE_NULL.dir/rule
+
+# Convenience name for target.
+__STL_TEMPLATE_NULL: CMakeFiles/__STL_TEMPLATE_NULL.dir/rule
+
+.PHONY : __STL_TEMPLATE_NULL
+
+# clean rule for target.
+CMakeFiles/__STL_TEMPLATE_NULL.dir/clean:
+	$(MAKE) -f CMakeFiles/__STL_TEMPLATE_NULL.dir/build.make CMakeFiles/__STL_TEMPLATE_NULL.dir/clean
+.PHONY : CMakeFiles/__STL_TEMPLATE_NULL.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir
+
+# All Build rule for target.
+CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/all:
+	$(MAKE) -f CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build.make CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/depend
+	$(MAKE) -f CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build.make CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target __STL_FUNCTION_TMPL_PARTIAL_ORDER"
+.PHONY : CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/rule
+
+# Convenience name for target.
+__STL_FUNCTION_TMPL_PARTIAL_ORDER: CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/rule
+
+.PHONY : __STL_FUNCTION_TMPL_PARTIAL_ORDER
+
+# clean rule for target.
+CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/clean:
+	$(MAKE) -f CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/build.make CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/clean
+.PHONY : CMakeFiles/__STL_FUNCTION_TMPL_PARTIAL_ORDER.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir
+
+# All Build rule for target.
+CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/all:
+	$(MAKE) -f CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build.make CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/depend
+	$(MAKE) -f CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build.make CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target __STL_NON_TYPE_TMPL_PARAM_BUG"
+.PHONY : CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/rule
+
+# Convenience name for target.
+__STL_NON_TYPE_TMPL_PARAM_BUG: CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/rule
+
+.PHONY : __STL_NON_TYPE_TMPL_PARAM_BUG
+
+# clean rule for target.
+CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/clean:
+	$(MAKE) -f CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/build.make CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/clean
+.PHONY : CMakeFiles/__STL_NON_TYPE_TMPL_PARAM_BUG.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/__STL_NULL_TMPL_ARGS.dir
+
+# All Build rule for target.
+CMakeFiles/__STL_NULL_TMPL_ARGS.dir/all:
+	$(MAKE) -f CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build.make CMakeFiles/__STL_NULL_TMPL_ARGS.dir/depend
+	$(MAKE) -f CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build.make CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target __STL_NULL_TMPL_ARGS"
+.PHONY : CMakeFiles/__STL_NULL_TMPL_ARGS.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/__STL_NULL_TMPL_ARGS.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__STL_NULL_TMPL_ARGS.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/__STL_NULL_TMPL_ARGS.dir/rule
+
+# Convenience name for target.
+__STL_NULL_TMPL_ARGS: CMakeFiles/__STL_NULL_TMPL_ARGS.dir/rule
+
+.PHONY : __STL_NULL_TMPL_ARGS
+
+# clean rule for target.
+CMakeFiles/__STL_NULL_TMPL_ARGS.dir/clean:
+	$(MAKE) -f CMakeFiles/__STL_NULL_TMPL_ARGS.dir/build.make CMakeFiles/__STL_NULL_TMPL_ARGS.dir/clean
+.PHONY : CMakeFiles/__STL_NULL_TMPL_ARGS.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/__STL_MEMBER_TEMPLATES.dir
+
+# All Build rule for target.
+CMakeFiles/__STL_MEMBER_TEMPLATES.dir/all:
+	$(MAKE) -f CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build.make CMakeFiles/__STL_MEMBER_TEMPLATES.dir/depend
+	$(MAKE) -f CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build.make CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target __STL_MEMBER_TEMPLATES"
+.PHONY : CMakeFiles/__STL_MEMBER_TEMPLATES.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/__STL_MEMBER_TEMPLATES.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__STL_MEMBER_TEMPLATES.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/__STL_MEMBER_TEMPLATES.dir/rule
+
+# Convenience name for target.
+__STL_MEMBER_TEMPLATES: CMakeFiles/__STL_MEMBER_TEMPLATES.dir/rule
+
+.PHONY : __STL_MEMBER_TEMPLATES
+
+# clean rule for target.
+CMakeFiles/__STL_MEMBER_TEMPLATES.dir/clean:
+	$(MAKE) -f CMakeFiles/__STL_MEMBER_TEMPLATES.dir/build.make CMakeFiles/__STL_MEMBER_TEMPLATES.dir/clean
+.PHONY : CMakeFiles/__STL_MEMBER_TEMPLATES.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Foreach.dir
+
+# All Build rule for target.
+CMakeFiles/Foreach.dir/all:
+	$(MAKE) -f CMakeFiles/Foreach.dir/build.make CMakeFiles/Foreach.dir/depend
+	$(MAKE) -f CMakeFiles/Foreach.dir/build.make CMakeFiles/Foreach.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Foreach"
+.PHONY : CMakeFiles/Foreach.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Foreach.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Foreach.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Foreach.dir/rule
+
+# Convenience name for target.
+Foreach: CMakeFiles/Foreach.dir/rule
+
+.PHONY : Foreach
+
+# clean rule for target.
+CMakeFiles/Foreach.dir/clean:
+	$(MAKE) -f CMakeFiles/Foreach.dir/build.make CMakeFiles/Foreach.dir/clean
+.PHONY : CMakeFiles/Foreach.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/config-operator-overloading.dir
+
+# All Build rule for target.
+CMakeFiles/config-operator-overloading.dir/all:
+	$(MAKE) -f CMakeFiles/config-operator-overloading.dir/build.make CMakeFiles/config-operator-overloading.dir/depend
+	$(MAKE) -f CMakeFiles/config-operator-overloading.dir/build.make CMakeFiles/config-operator-overloading.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/opt/git/STL-exercise/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target config-operator-overloading"
+.PHONY : CMakeFiles/config-operator-overloading.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/config-operator-overloading.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/config-operator-overloading.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /opt/git/STL-exercise/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/config-operator-overloading.dir/rule
+
+# Convenience name for target.
+config-operator-overloading: CMakeFiles/config-operator-overloading.dir/rule
+
+.PHONY : config-operator-overloading
+
+# clean rule for target.
+CMakeFiles/config-operator-overloading.dir/clean:
+	$(MAKE) -f CMakeFiles/config-operator-overloading.dir/build.make CMakeFiles/config-operator-overloading.dir/clean
+.PHONY : CMakeFiles/config-operator-overloading.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

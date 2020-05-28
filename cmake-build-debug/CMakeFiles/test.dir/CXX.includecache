@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/opt/git/STL-exercise/main.cpp
+/opt/git/STL-exercise/configuration/__STL_CLASS_PARTIAL_SPECIALIZATION.cpp
+iostream
+-
+
+/opt/git/STL-exercise/configuration/__STL_STATIC_TEMPLATE_MEMBER_BUG.cpp
 iostream
 -
 
